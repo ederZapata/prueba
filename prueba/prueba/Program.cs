@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataBaseContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //Con esta línea de código, implemento la librería para hacer cambnios en caliente de HTML
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+object value = builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
